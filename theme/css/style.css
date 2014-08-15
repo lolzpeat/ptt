@@ -271,7 +271,7 @@ a.img-thumb img { max-width:180px; display: block; }
 /* #Header - Social Toolbox
 ================================================== */
 #header #top-header #toolbox-wrapper {
-	width:195px;
+	width:310px;
 	height:65px;
 	float:right;
 }
@@ -282,16 +282,54 @@ a.img-thumb img { max-width:180px; display: block; }
 	background:url(../images/bg_topHeader_blue.png) 0 0 repeat-x;
 }
 
-#header #top-header #toolbox-wrapper #toolbox a {  }
-#header #top-header #toolbox-wrapper #toolbox a.icon {
+#header #top-header #toolbox-wrapper #toolbox a.contact-us {
+	width: 80px;
+	margin: auto;
 	float:left;
-	margin:0 9px;
+	margin:0 12px 0;
 	display:block;
+	font-size:20px;
+	color: #fff;
 }
 
-#header #top-header #toolbox-wrapper #toolbox a#font-small { font-size:11px; margin-left:8px; }
-#header #top-header #toolbox-wrapper #toolbox a#font-medium { font-size:15px; margin:0 15px; }
-#header #top-header #toolbox-wrapper #toolbox a#font-large { font-size:20px; }
+#header #top-header #toolbox-wrapper #toolbox a.contact-us:hover {
+	color: #57b7df;
+}
+
+#header #top-header #toolbox-wrapper #toolbox a.contact-us cufon {
+	top: -4px;
+}
+
+#header #top-header #toolbox-wrapper #toolbox a.icon {
+	width: 30px;
+	height: 14px;
+	padding: 4px 0 4px 3px;
+	float:left;
+	margin:2px 0 0;
+	display:block;
+	text-align: center;
+	background:url(../images/icon_separator.png) center left no-repeat;
+}
+
+#header #top-header #toolbox-wrapper #toolbox a.icon img {
+	display: block;
+	margin: auto;
+}
+
+#header #top-header #toolbox-wrapper #toolbox a#font-small {
+	font-size:11px;
+	padding: 8px 0 0 3px;
+}
+
+#header #top-header #toolbox-wrapper #toolbox a#font-medium {
+	font-size:15px;
+	padding: 5px 0 3px 3px;
+}
+
+#header #top-header #toolbox-wrapper #toolbox a#font-large {
+	font-size:20px;
+	padding: 0 0 8px 3px;
+}
 
 #toolbox a#font-small.active,
 #toolbox a#font-medium.active,
@@ -308,10 +346,10 @@ a.img-thumb img { max-width:180px; display: block; }
 
 #login-finish{ color:#fff; }
 #header #top-header #toolbox-wrapper #login ul li {
-	width:65px;
+	width:94px;
 	float:left;
-	padding-left:30px;
-	background:url(../images/login-bullet.png) 8px 4px no-repeat;
+	padding-left:60px;
+	background:url(../images/login-bullet.png) 40px 4px no-repeat;
 	position:relative;
 }
 
@@ -329,12 +367,14 @@ a.img-thumb img { max-width:180px; display: block; }
 #header #top-header #toolbox-wrapper #login ul li a.active { color:#fff; }
 /*Logged in*/
 #header #top-header #toolbox-wrapper #login ul li#username {
-	width:135px;
+	width:264px;
 	font-size:12px;
 	height:20px;
 	line-height:20px;
 	color:#fff;
 	overflow:hidden;
+	background-position: 6px 4px;
+	padding-left: 18px;
 }
 
 #header #top-header #toolbox-wrapper #login a#logout {
@@ -353,7 +393,7 @@ a.img-thumb img { max-width:180px; display: block; }
 /* #Header - Login Form
 ================================================== */
 #header #top-header #toolbox-wrapper #login #login-form {
-	width:175px;
+	width:290px;
 	height:110px;
 	background:url(../images/bg_topHeader_darkest.png) 0 0 repeat;
 	position:absolute;
@@ -363,8 +403,8 @@ a.img-thumb img { max-width:180px; display: block; }
 	display:none;
 }
 
-#header #top-header #toolbox-wrapper #login #login-form input.txtForm { width:157px; margin-bottom:10px; }
-#header #top-header #toolbox-wrapper #login #login-form #forgot-password { font-size:20px; float:right;}
+#header #top-header #toolbox-wrapper #login #login-form input.txtForm { width:270px; margin-bottom:10px; }
+#header #top-header #toolbox-wrapper #login #login-form #forgot-password { font-size:20px; float:right; margin-top: 3px;}
 #header #top-header #toolbox-wrapper #login #login-form #btn-login {
 	width:79px;
 	height:24px;
@@ -388,7 +428,7 @@ a.img-thumb img { max-width:180px; display: block; }
 }
 
 #main-menu > ul > li > a {
-	width:206px;
+	width:200px;
 	outline:none;
 	display:block;
 	padding-top:5px;
@@ -396,11 +436,9 @@ a.img-thumb img { max-width:180px; display: block; }
 	padding-left:40px;
 	height:52px;
 }
+#main-menu > ul > li > a#home { width:165px; }
+#main-menu > ul > li > a#promotion { width:265px; background-image:url(../images/nav-bg-l.png); }
 /*
-#main-menu > ul > li > a#home {
-	width:170px;
-	background:url(../images/nav-home-bg.png) 0 0 no-repeat;
-}
 
 #main-menu > ul > li > a#lifestyle {
 	width:250px;
@@ -445,8 +483,8 @@ a.img-thumb img { max-width:180px; display: block; }
 }
 
 #main-menu > ul > li > .blue-privilege-dropdown {
-	width: 1300px;
-	left:-490px;
+	width: 1240px;
+	left:-445px;
 /*	width: 825px;
 	left:-75px;*/
 }
@@ -1766,7 +1804,10 @@ article#news-detail strong {
 	text-align:center;
 }
 
-.pin-blog .column p { margin: 0 0 12px; }
+.pin-blog .column p,
+.pin-blog .column h1,
+.pin-blog .column h2,
+.pin-blog .column h3 { margin: 0 0 12px; }
 
 .pin-blog .blog-col1 {}
 .pin-blog .blog-col2 { margin: 0 30px; }
