@@ -1,0 +1,68 @@
+body { margin:0; padding:0; font-family:Tahoma!important; font-size:13px; }
+input,textarea,select { font-family:Tahoma!important; }
+
+.quiz {
+	width:227px;
+	height:385px;
+}
+
+#blue-quiz {
+	background:url(images/blue-quiz.jpg) 0 0 no-repeat;
+	position:relative;
+}
+
+#blue-quiz #btn-quiz {
+	display:block;
+	position:absolute;
+	bottom:10px;
+	left:40px;
+}
+
+#answer {
+	background:#595a59 url(images/quiz-bg-bottom.jpg) bottom center no-repeat;
+}
+
+#answer #time {
+	width:196px;
+	height:37px;
+	padding-top:3px;
+	margin:0 auto;
+	text-align:center;
+	color:#fff;
+	font-size:18px;
+	background:url(images/separator.png) left bottom no-repeat;
+	font-family:Arial;
+}
+
+#answer #time strong {
+	color:#3cc7f4;
+	font-weight:bold;
+	font-size:20px;
+	font-family:Arial;
+}
+
+#answer #form-answer {
+	color:#fff;
+	margin:10px 0;
+}
+
+#answer #form-answer table {
+	padding-left:15px;
+}
+
+#answer #form-answer table tr td {
+	vertical-align:top;
+	padding:4px 0;
+}
+
+#answer #form-answer #btn-answer {
+	width:120px;
+	height:32px;
+	display:block;
+	margin:32px auto 0;
+	text-transform:uppercase;
+	text-indent:-9999px;
+	outline:none;
+	border:none;
+	background:url(images/btn-answer.png) 0 0 no-repeat;
+}
