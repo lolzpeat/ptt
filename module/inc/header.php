@@ -19,12 +19,13 @@
 
 		<div id="toolbox-wrapper">
 			<div id="toolbox">
+				<a class="contact-us" href="<?php echo $ContactUs; ?>">Contact Us</a>
 				<a class="icon" href="http://twitter.com/PTTNews"><img src="./img/icon_twt.png" alt="Twitter"/></a>
 				<a class="icon" href="http://www.facebook.com/pttbluesociety"><img src="./img/icon_fb.png" alt="Facebook"/></a>
 				<a class="icon" href="http://www.youtube.com/user/bluesocietychannel"><img src="./img/icon_yt.png" alt="Youtube"/></a>
-				<a href="#" id="font-small">A</a>
-				<a href="#" id="font-medium">A</a>
-				<a href="#" id="font-large">A</a>
+				<a href="#" id="font-small" class="icon">A</a>
+				<a href="#" id="font-medium" class="icon">A</a>
+				<a href="#" id="font-large" class="icon">A</a>
 			</div>
 			<div id="login">
 				<?php if(!empty($_SESSION['v_smart_username'])){?>
@@ -35,7 +36,7 @@
 				<div class="clr"></div>
 				<div id="div_mini_profile">
 					<iframe src="https://www.pttbluecard.com/View/authen/MiniProfile.aspx"
-							  width="189"
+							  width="304"
 							  scrolling="no"
 							  height="160"
 							  frameborder="0">
@@ -112,8 +113,8 @@
 			</ul> -->
 		</li>
 		<li>
-			<a id="contact-us" href="<?php echo $ContactUs; ?>"><h2>Contact Us</h2>
-			<p>ตอบทุกข้อสงสัย</p>
+			<a id="promotion" href="https://www.pttbluecard.com/view/activity/allactivity.aspx"><h2>Promotion &amp; Activity</h2>
+			<p>กิจกรรมสำหรับชาวบลู</p>
 			</a>
 		</li>
 	</ul>
