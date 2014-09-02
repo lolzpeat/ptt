@@ -10,17 +10,17 @@
 	 */
 
 	/* ========================================================================================================================
-	
+
 	Required external files
-	
+
 	======================================================================================================================== */
 
 	require_once( 'external/starkers-utilities.php' );
 
 	/* ========================================================================================================================
-	
+
 	Actions and Filters
-	
+
 	======================================================================================================================== */
 
 	add_action( 'wp_enqueue_scripts', 'script_enqueuer' );
@@ -28,19 +28,19 @@
 	add_filter( 'body_class', 'add_slug_to_body_class' );
 
 	/* ========================================================================================================================
-	
+
 	Custom Post Types - include custom post types and taxonimies here e.g.
 
 	e.g. require_once( 'custom-post-types/your-custom-post-type.php' );
-	
+
 	======================================================================================================================== */
 
 
 
 	/* ========================================================================================================================
-	
+
 	Scripts
-	
+
 	======================================================================================================================== */
 
 	/**
@@ -56,24 +56,24 @@
 
 		wp_register_style( 'screen', get_template_directory_uri().'/style.css', '', '', 'screen' );
         wp_enqueue_style( 'screen' );
-	}	
+	}
 
 	/* ========================================================================================================================
-	
+
 	Comments
-	
+
 	======================================================================================================================== */
 
 	/**
-	 * Custom callback for outputting comments 
+	 * Custom callback for outputting comments
 	 *
 	 * @return void
 	 * @author Keir Whitaker
 	 */
 	function starkers_comment( $comment, $args, $depth ) {
-		$GLOBALS['comment'] = $comment; 
+		$GLOBALS['comment'] = $comment;
 		?>
-		<?php if ( $comment->comment_approved == '1' ): ?>	
+		<?php if ( $comment->comment_approved == '1' ): ?>
 		<div class="right-content-box">
 			<div class="comment-detail-title">
 				<h3><span class="white">Comment :</span> <?php the_title(); ?></h3>
@@ -88,9 +88,9 @@
 		</div>
 		<?php endif; ?>
 
-		<?php 
+		<?php
 	}
-	
+
 add_filter( 'post_thumbnail_html', 'remove_thumbnail_dimensions', 10, 3 );
 
 function remove_thumbnail_dimensions( $html, $post_id, $post_image_id ) {
@@ -112,7 +112,7 @@ function config_url($name){
 }
 
 add_theme_support( 'post-thumbnails' );
-	
+
 register_nav_menus( array(
 	'bluecard_menu' => 'Blue Card Menu',
 	'sitemap' => 'Sitemap'
@@ -122,26 +122,27 @@ register_nav_menus( array(
 remove_filter('the_excerpt', 'wpautop');
 
 function limit_words($string, $word_limit) {
- 
+
 	// creates an array of words from $string (this will be our excerpt)
 	// explode divides the excerpt up by using a space character
- 
+
 	$words = explode(' ', $string);
- 
+
 	// this next bit chops the $words array and sticks it back together
 	// starting at the first word '0' and ending at the $word_limit
 	// the $word_limit which is passed in the function will be the number
 	// of words we want to use
 	// implode glues the chopped up array back together using a space character
- 
+
 	return implode(' ', array_slice($words, 0, $word_limit));
- 
+
 }
 
 add_action('init', 'start_session', 1);
 
-  function start_session() {
-    if (!session_id()) {
-      session_start();
-    }
-  }
+function start_session() {
+	if (!session_id()) {
+		session_start();
+	}
+}
+

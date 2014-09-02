@@ -88,7 +88,7 @@
 			</ul>
 		</li>
 		<li>
-			<a id="lifestyle"><h2>Blue Privilege</h2>
+			<a id="lifestyle" href="<?php echo $Category; ?>blue-privilege/"><h2>Blue Privilege</h2>
 			<p>แนะนำความสุข สำหรับชาวบลู</p>
 			</a>
 			<ul class="dropdown blue-privilege-dropdown">

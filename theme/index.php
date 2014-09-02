@@ -109,9 +109,9 @@
 		<?php if ( have_posts() ): ?>
 		<?php
 		    $my_query = new WP_Query(array(
-		        'cat' => 10,
+		        'category_name' => 'blue-privilege',
 		        'orderby' => date,
-		        'paged' => $paged,
+		        'paged' => $paged
 		    ));
 		    while ($my_query->have_posts()) : $my_query->the_post();
 		?>

@@ -32,10 +32,10 @@
 					return containerWidth / 3;
 				  }
 				});
-			});			
+			});
 
 			$container.infinitescroll({
-			  navSelector  : '#nav-below',    // selector for the paged navigation 
+			  navSelector  : '#nav-below',    // selector for the paged navigation
 			  nextSelector : '#nav-below .nav-previous a',  // selector for the NEXT link (to page 2)
 			  itemSelector : '#masonry-content > .col3',     // selector for all items you'll retrieve
 			  loading: {
@@ -43,7 +43,7 @@
 				  img: '<?php bloginfo('template_directory'); ?>/images/ajax-loader.gif'
 				}
 			  },
-			  
+
 			  // trigger Masonry as a callback
 			  function( newElements ) {
 				// hide new items while they are loading
@@ -52,7 +52,7 @@
 				$newElems.imagesLoaded(function(){
 				  // show elems now they're ready
 				  $newElems.animate({ opacity: 1 });
-				  $container.masonry( 'appended', $newElems, true ); 
+				  $container.masonry( 'appended', $newElems, true );
 				});
 				Cufon.replace('h2');
 			  });
@@ -97,7 +97,7 @@
 				<div class="clear"></div>
 				<div class="line"></div>
 				<div class="like">
-					<?php 
+					<?php
 					echo '<iframe src="//www.facebook.com/plugins/like.php?href='.rawurlencode(get_permalink()).'&amp;send=false&amp;layout=button_count&amp;width=450&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21&amp;appId=102550449895360" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:109px; height:21px;" allowTransparency="true"></iframe>';
 					/*echo '<div class="fb-like" data-href="'.rawurlencode(get_permalink()).'" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div>';*/ ?>
 				</div>

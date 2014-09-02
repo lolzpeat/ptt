@@ -8,7 +8,7 @@
 
 
 	<div class="col3" style="height:385px">
-		<a href="https://www.pttbluecard.com/view/authen/login.aspx?id=IbifRUwHgZRkUnWHmIZGSrh8NsFrkf3qwTJSqv2uiaYjNerm2D1Esg==&val=event"><img src="<?php bloginfo('template_directory'); ?>/images/Banner-Golf-2014.jpg" alt="Golf 2014"/></a>
+		<a href="http://www.pttbluecardgolf.com/index.php?mo=3&art=42182787"><img src="<?php bloginfo('template_directory'); ?>/images/Banner-Golf-2014.jpg" alt="Golf 2014"/></a>
 	</div>
 
 	<!-- Quiz -->
